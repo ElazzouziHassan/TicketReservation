@@ -1,0 +1,13 @@
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/repository/ReservationRepository.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/repository/UtilisateurRepository.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/client/SoapClient.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/service/ReservationService.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/model/Evenement.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/service/BilletService.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/model/Reservation.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/model/Billet.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/model/Utilisateur.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/Main.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/repository/DatabaseConnection.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/repository/BilletRepository.java
+/home/wizardy/web-semantique/ticketservice/src/main/java/com/ticketservice/service/UtilisateurService.java
