@@ -41,11 +41,11 @@ public class SoapClient {
         
         // Test inscription utilisateur
         boolean inscriptionOk = utilisateurPort.inscrireUtilisateur(
-            "test@example.com", "Dupont", "Jean", "password123");
+            "elazzouzi.h855@ucd.ac.ma", "El azzouzi", "Hassan", "pass1234");
         System.out.println("Inscription utilisateur: " + (inscriptionOk ? "OK" : "Échec"));
         
         // Test connexion utilisateur
-        Utilisateur utilisateur = utilisateurPort.connecterUtilisateur("test@example.com", "password123");
+        Utilisateur utilisateur = utilisateurPort.connecterUtilisateur("elazzouzi.h855@ucd.ac.ma", "pass1234");
         System.out.println("Connexion utilisateur: " + (utilisateur != null ? "OK" : "Échec"));
         
         if (utilisateur != null) {
