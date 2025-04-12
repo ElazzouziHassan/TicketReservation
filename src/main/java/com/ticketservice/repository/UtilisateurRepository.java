@@ -37,20 +37,13 @@ public class UtilisateurRepository {
         try {
             em.getTransaction().begin();
             if (utilisateur.getId() == null) {
-                System.out.println("Persistance d'un nouvel utilisateur: " + utilisateur.getEmail());
                 em.persist(utilisateur);
             } else {
-                System.out.println("Mise à jour d'un utilisateur existant: " + utilisateur.getEmail());
                 em.merge(utilisateur);
             }
             em.getTransaction().commit();
-            System.out.println("Opération de sauvegarde réussie pour: " + utilisateur.getEmail());
         } catch (Exception e) {
-            System.err.println("Erreur lors de la sauvegarde de l'utilisateur: " + utilisateur.getEmail());
-            if (em.getTransaction().isActive()) {
-                em.getTransaction().rollback();
-            }
-            e.printStackTrace();
+            em.getTransaction().rollback();
             throw e;
         } finally {
             em.close();
