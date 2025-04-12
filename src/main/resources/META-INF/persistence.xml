@@ -16,20 +16,15 @@
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/ticketservice" />
             <property name="javax.persistence.jdbc.user" value="postgres" />
-            <property name="javax.persistence.jdbc.password" value="" />
+            <property name="javax.persistence.jdbc.password" value="********" />
             
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
             
-            <!-- Changer de "update" à "create" pour créer les tables automatiquement -->
-            <property name="hibernate.hbm2ddl.auto" value="create" />
-            
-            <!-- Propriétés de débogage supplémentaires -->
             <property name="hibernate.connection.autocommit" value="false"/>
             <property name="hibernate.connection.pool_size" value="10"/>
-            <property name="hibernate.connection.release_mode" value="after_transaction"/>
-            <property name="hibernate.connection.shutdown" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>
