@@ -19,21 +19,15 @@ public class UtilisateurService {
             @WebParam(name = "motDePasse") String motDePasse) {
         
         try {
-            System.out.println("Tentative d'inscription pour l'email: " + email);
-            
             // Vérifier si l'email existe déjà
-            Utilisateur existingUser = utilisateurRepository.findByEmail(email);
-            if (existingUser != null) {
-                System.out.println("Échec: Email déjà utilisé: " + email);
+            if (utilisateurRepository.findByEmail(email) != null) {
                 return false;
             }
             
             Utilisateur utilisateur = new Utilisateur(email, nom, prenom, motDePasse);
             utilisateurRepository.save(utilisateur);
-            System.out.println("Inscription réussie pour: " + email + " avec ID: " + utilisateur.getId());
             return true;
         } catch (Exception e) {
-            System.err.println("Erreur lors de l'inscription de l'utilisateur: " + email);
             e.printStackTrace();
             return false;
         }
